@@ -1,3 +1,24 @@
+body::selection {
+    color: white;
+    background-color: rgb(76, 76, 76);
+}
+
+.card {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: an 0.6s ease-in-out forwards;
+  animation-delay: 0.3s;
+  font-size: 90%;
+}
+ 
+@keyframes an {
+  to {
+    opacity: 1; 
+    transform: translateY(0);
+    font-size: 100%;
+  }
+}
+
 audio {
     width: 100%;
     transition: ease 0.2s all;
